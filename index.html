@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="jornaltictac.ico" type="image/x-icon">
+    <title>Jornal TicTac & Instituto Penrabel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        .simbolo-instituicao {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: auto;
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            background-color: #666; /* Cor mais escura para o link ativo */
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .highlight {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .highlight img {
+            width: 50%;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .highlight .content {
+            flex-grow: 1;
+        }
+
+        .highlight h2 {
+            margin-top: 0;
+        }
+
+        .news-section {
+            margin-top: 40px;
+        }
+
+        .news-post {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .news-post:hover {
+            transform: scale(1.02);
+        }
+
+        .news-post img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .news-post .content {
+            flex-grow: 1;
+        }
+
+        .news-post h2 {
+            margin: 0;
+        }
+
+        .news-post p {
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .clock {
+            font-family: 'Arial', sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jornal do Colégio TicTac & Penrabel</h1>
+    <img src="imagens/tictac.png" alt="TicTac & Instituto Penrabel" class="simbolo-instituicao">
+</header>
+
+<!-- Menu de navegação -->
+<nav>
+    <a href="index.html" class="active">Jornal Escolar</a>
+    <a href="materias.html">Matérias</a>
+    <a href="cronograma.html">Cronograma</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<div class="container">
+    <!-- Seção de destaque -->
+    <div class="highlight">
+        <img src="imagens/faveron.jpeg" alt="Faveron bravo">
+        <div class="content">
+            <h2><a href="noticias/faveron.html">Notícia em Destaque: Faveron fica com raiva e destroi tudo.</a></h2>
+            <p>Data: 11 de Setembro de 2024</p>
+            <p>Após trapacearem no truco, Faveron machuca diversos alunos. Saiba mais.</p>
+        </div>
+    </div>
+    
+
+    <!-- Seção com as outras notícias -->
+    <div class="news-section">
+        <div class="news-post">
+            <img src="imagens/Ortegadanca.jpg" alt="Ortega Dancando">
+            <div class="content">
+                <h2><a href="noticias/Ortega.html">Onlyfans do Ortega bomba!</a></h2>
+                <p>Data: 24 de Setembro de 2024</p>
+                <p>Na tarde do dia 24 de Setembro, um aluno do 9° ano, encontra, por acidente o onlyfans do aluno Pedro Ortega... Saiba mais.</p>
+            </div>            
+        </div>
+        
+        
+        <div class="news-post">
+            <img src="imagens/SandimDormindo.jpg" alt="Sandim dormindo">
+            <div class="content">
+                <h2><a href="noticias/Sandim.html">Sandim é flagrado dormindo em sala de aula!</a></h2>
+                <p>Data: 23 de Setembro de 2024</p>
+                <p>Nesta Segunda-feira, dia 23 de Setembro, Gabriel Sandim é flagrado dormindo na sala de aula. Após a prova... Saiba mais.</p>
+            </div>
+        </div>
+        
+        <div class="news-post">
+            <img src="imagens/galo.jpeg" alt="Passeio Rancho do Galo">
+            <div class="content">
+                <h2><a href="noticias/galo.html">Passeio ao Rancho do Galo!</a></h2>
+                <p>Data: 18 de Setembro de 2024</p>
+                <p>Hoje a Direção do Colégio TicTac & Instituto Penrabel comunicou os responsáveis por meio da plataforma Sae Comunica sobre o passeio. Saiba mais.</p>
+            </div>
+        </div>
+            
+        <div class="news-post">
+            <img src="imagens/provas.jpeg" alt="Provas">
+            <div class="content">
+                <h2><a href="noticias/provas.html">Provas se aproximam!</a></h2>
+                <p>Data: 17 de Setembro de 2024</p>
+                <p>Prepare-se para a semana de provas bimestrais do 3º bimestre. Saiba mais.</p>
+            </div>
+        </div>
+        
+        <div class="news-post">
+            <img src="imagens/interclasseele.jpeg" alt="Interclasse Eletrônico">
+            <div class="content">
+                <h2><a href="noticias/interclasseele.html">Interclasse Eletrônico.</a></h2>
+                <p>Data: 12 de Setembro de 2024</p>
+                <p>O 2° E.M abriu nesta quinta-feira as inscrições para o 1° Interclasse Eletrônico do Colégio TicTac. Saiba mais.</p>
+            </div>
+        </div>
+
+        <div class="news-post">
+            <img src="imagens/interclasse.jpeg" alt="Interclasse">
+            <div class="content">
+                <h2><a href="noticias/interclasse.html">Inscrições para o Interclasse 2024 abertas!</a></h2>
+                <p>Data: 09 de Setembro de 2024</p>
+                <p>Estão abertas as inscrições para o Interclasse 2024. Saiba mais.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clock">
+    <span id="time"></span>
+    <p>Jornal TicTac & Instituto Penrabel 2024.</p>
+</div>
+
+<script>
+    function updateClock() {
+        // Obtém a data e hora atuais
+        const now = new Date();
+    
+        // Calcula a diferença de fuso horário de Brasília (UTC-3)
+        const brasiliaTime = new Date(now.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
+    
+        // Obtém as horas, minutos e segundos
+        let hours = brasiliaTime.getHours();
+        let minutes = brasiliaTime.getMinutes();
+        let seconds = brasiliaTime.getSeconds();
+    
+        // Adiciona um zero à esquerda se os valores forem menores que 10
+        hours = hours < 10 ? '0' + hours : hours;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+    
+        // Exibe a hora no elemento com id="time"
+        document.getElementById('time').innerText = hours + ':' + minutes + ':' + seconds;
+    }
+    
+    // Atualiza o relógio a cada segundo
+    setInterval(updateClock, 1000);
+    
+    // Inicia o relógio
+    updateClock();
+</script>
+
+</body>
+</html>
